@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdrianTech</title>
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        .header {
+            background-image: url('HEADER.JPG'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 0; /* Adjust padding for spacing */
+            position: relative;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(3, 3, 51, 0.5); /* Semi-transparent overlay */
+            z-index: 1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2; /* Ensure text appears above the overlay */
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .about img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #007bff;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+        }
+
+        /* Services Section */
+        .services {
+            background-color: #f4f4f4;
+            padding: 40px 0;
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        /* Expertise Section */
+        .Expertise {
+            background-color: #fff;
+            padding: 40px 0;
+        }
+
+        .Expertise ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .Expertise li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        /* Success Stories Section */
+        .success-stories {
+            width: 100%;
+            height: 350px;
+            overflow: auto;
+            background-color: #f4f4f4;
+            padding: 40px 0;
+        }
+
+        .story {
+            margin-bottom: 20px;
+        }
+
+        .story h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            width: 100%;
+            height: 350px;
+            overflow: auto;
+            background-color: #fff;
+            padding: 40px 0;
+        }
+
+        .testimonials blockquote {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #f4f4f4;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .contact ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact li {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .contact i {
+            font-size: 2rem;
+            margin-right: 10px;
+            color: #007bff;
+        }
+
+        .contact a {
+            color: #333;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* whyme Section */
+        .whyme {
+            background-color: #fff;
+            padding: 40px 0;
+        }
+
+        .whyme ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .whyme li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container header-content">
+            <h1>Cybersecurity Recovery Specialist</h1>
+            <p>Recovering Hacked Accounts & Lost Crypto Funds</p>
+            <a href="https://twitter.com/messages/compose?recipien_id=1168331155877367811"><i class="fab fa-twitter"></i></a>
+            <a href="https://t.me/AdrianT_ech"><i class="fab fa-telegram"></i></a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <img src="ABAUT.jpg" alt="About Me Image"> <!-- Replace with your about me image URL -->
+            <h3>Adrian James</h3>
+            <h2>About Me</h2>
+            <p>I am a dedicated Cybersecurity Agent with extensive experience in helping individuals and businesses recover compromised digital assets. My primary focus is on securing and restoring access to hacked social media accounts, gaming profiles, and lost cryptocurrency funds due to scams, incorrect transactions, or platform freezes.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Services Offered</h2>
+            <ul>
+                <li><strong>Social Media & Gaming Account Recovery</strong>: Regain control of hacked Facebook, Instagram, Twitter, Discord, Steam, Xbox Live, or other gaming/social media accounts.
+                    Investigate unauthorized access and secure your account against future breaches.
+                    Assist in resetting passwords, email addresses, and two-factor authentication (2FA) settings.</li>
+
+                <li><strong>Cryptocurrency Fund Recovery</strong>: Recover lost or stolen cryptocurrencies sent to wrong addresses or deposited into fraudulent platforms.
+                    Provide guidance on reversing accidental transfers where possible.
+                    Collaborate with exchanges and wallet providers to unfreeze locked funds.</li>
+
+                <li><strong>Scam Website Mitigation</strong>: Analyze phishing attacks, fake investment schemes, and Ponzi scams.
+                    Work with law enforcement agencies and regulatory bodies to track down scammers.
+                    Educate clients on how to avoid common cyber scams and protect their personal information.</li>
+
+                <li><strong>Platform Dispute Resolution</strong>: Resolve disputes with centralized and decentralized platforms regarding frozen accounts or inaccessible funds.
+                    Draft formal complaints and escalate cases to higher authorities if necessary.
+                    Negotiate settlements or refunds when applicable..</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="Expertise" id="Expertise">
+        <div class="container">
+            <h2>Expertise & Skills</h2>
+            <ul>
+                <li><strong>Digital Forensics</strong>: Deep understanding of data recovery techniques and tools.</li>
+
+                <li><strong>Blockchain Technology</strong>: Proficient in Bitcoin, Ethereum, Binance Smart Chain, and other major blockchains.</li>
+
+                <li><strong>Cyber Incident Response</strong>: Rapid response to incidents involving hacking, ransomware, and data breaches.</li>
+
+                <li><strong>Ethical Hacking</strong>: Certified knowledge in penetration testing and vulnerability assessment.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="success-stories" id="success-stories">
+        <div class="container">
+            <h2>Success Stories</h2>
+            <div class="story">
+                <h3>Case Study #1: Social Media Account Recovery</h3>
+                <p>Regained access to a hacked Instagram account within 3 hours.</p>
+            </div>
+            <div class="story">
+                <h3>Case Study #2: Cryptocurrency Transfer Error</h3>
+                <p>Recovered 90% of mistakenly sent ETH by collaborating with the exchange.</p>
+            </div>
+            <div class="story">
+                <h3>Case Study #3: Frozen Crypto Exchange Account</h3>
+                <p>Reinstated a frozen account and restored full access to funds.</p>
+            </div>
+            <div class="story">
+                <h3>Case Study #4: Hacked Gmail Account</h3>
+                <p>Successfully restored the account within 3 hours.</p>
+            </div>
+            <div class="story">
+                <h3>Case Study #5: Haked Youtube Channel.</h3>
+                <p>Full restoration of the Channel, including subcriber count and monetization status.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <blockquote>
+                "I thought my crypto was gone forever until I reached out to Adrian. Their expertise and persistence saved me thousands of dollars!"<br>
+                — John D., Investor
+            </blockquote>
+            <blockquote>
+                "After months of trying to get my hacked Twitter account back, Adrian did it in just a few hours. Thank you so much!"<br>
+                — Sarah M., Content Creator
+            </blockquote>
+            <blockquote>
+                "A scammer tricked me into sending them Ethereum, and I thought there was no way to get it back. But Adrin proved me wrong. Through his network and investigative skills, he managed to trace the transaction and recover over 90% ." <br>
+                — David S., Victim of Scam
+            </blockquote>
+            <blockquote>
+                "I lost access to my Gmail account after falling victim to a phishing attack. [Your Name] quickly identified the issue and helped me regain control. They also educated me on how to avoid similar attacks in the future. I’m extremely grateful!"<br>
+                — Emily R., Business Owner 
+            </blockquote>
+            <blockquote>
+                "When my YouTube channel was hacked, I thought I’d lose everything I had built over the years. [Your Name] worked tirelessly to restore my channel and even helped recover some of the deleted videos. Their expertise saved my career!"<br>
+                — Ryan T., Content Creator 
+            </blockquote>
+            <blockquote>
+                "I accidentally sent Bitcoin to the wrong wallet address, and I was devastated. [Your Name] not only explained the situation clearly but also worked tirelessly to recover my funds. Thanks to their expertise, I got most of my money back!"<br>
+                — Michael R., Cryptocurrency Trader
+            </blockquote>
+            <blockquote>
+                "My gaming account on Steam had been hacked, and all my valuable items were stolen. After reaching out to [Your Name], they quickly identified the breach and helped me regain control of my account. They even assisted in recovering some of the stolen items through Steam support. I can’t thank them enough!"<br>
+                — Alex P., Gamer 
+            </blockquote>
+            <blockquote>
+                "When my crypto exchange account was frozen without warning, I felt helpless. [Your Name] stepped in and navigated the complex dispute resolution process with professionalism. Within two weeks, my account was unfrozen, and my funds were restored. I highly recommend their services!"<br>
+                — Emma L., Investor 
+            </blockquote>
+            <blockquote>
+                "A scammer tricked me into sending them Ethereum, and I thought there was no way to get it back. But [Your Name] proved me wrong. Through their network and investigative skills, they managed to trace the transaction and negotiate a partial refund. Their dedication is unmatched!"<br>
+                — David S., Victim of Scam 
+            </blockquote>
+            <blockquote>
+                "After being locked out of my Instagram business account due to a hack, my entire online presence was at risk. [Your Name] acted fast, working directly with Instagram support to verify my identity and restore access. My business is back on track thanks to their quick response!"<br>
+                — Sarah K., Social Media Marketer 
+            </blockquote>
+            <blockquote>
+                "I lost access to my Discord server after someone gained unauthorized access. [Your Name] guided me through the recovery process and even implemented stronger security measures to prevent future attacks. Their attention to detail is impressive!"<br>
+                — James T., Community Manager 
+            </blockquote>
+            <blockquote>
+                "When my crypto wallet was compromised, I panicked. [Your Name] provided calm and expert advice, helping me secure what remained and recover part of the stolen funds. Their knowledge of blockchain technology is truly remarkable."<br>
+                — Lisa W., Crypto Enthusiast 
+            </blockquote>
+            <blockquote>
+                "As a small business owner, losing access to my company's Twitter account due to a phishing attack was catastrophic. [Your Name] came to the rescue, identifying the breach and assisting in regaining control. They also educated me on how to avoid such incidents in the future."<br>
+                — Robert H., Business Owner 
+            </blockquote>
+            <blockquote>
+                "A friend referred me to [Your Name] after I fell victim to a fake investment scheme. Not only did they help me file a report with law enforcement, but they also traced the scammers' digital footprint. While full recovery isn't always possible, their efforts gave me peace of mind and closure."<br>
+                — Clara G., Victim of Investment Scam 
+            </blockquote>
+            <blockquote>
+                "My child’s gaming account was hacked, and several in-game purchases were made without permission. [Your Name] handled everything professionally, contacting the game developer to reverse the charges and secure the account. I’m grateful for their assistance!"<br>
+                — Jennifer M., Parent 
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Ready to take action? Let’s work together to secure your digital assets and resolve any issues you may be facing.</p>
+            <ul>
+                <li><a href="https://twitter.com/messages/compose?recipien_id=1168331155877367811"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://t.me/AdrianT_ech"><i class="fab fa-telegram"></i> Telegram</a></li>
+                <li><a href=""><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="whyme" id="whyme">
+        <div class="container">
+            <h2>Why Choose Me?</h2>
+            <ul>
+                <li><strong>Experience</strong>: Years of hands-on experience dealing with complex cybersecurity challenges.</li>
+
+                <li><strong>Confidentiality</strong>: Your privacy and sensitive information are always protected.</li>
+
+                <li><strong>Transparency</strong>: Clear communication throughout the process, ensuring you understand every step taken.</li>
+
+                <li><strong>Results-Driven</strong>: Focused on delivering tangible outcomes and minimizing downtime for your accounts or investments.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Cybersecurity Recovery Specialist. All rights reserved.</p>
+            <a href="https://twitter.com/messages/compose?recipien_id=1168331155877367811"><i class="fab fa-twitter"></i></a>
+            <a href="https://t.me/AdrianT_ech"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
