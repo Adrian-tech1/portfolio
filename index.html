@@ -3,15 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ethical Hacking Services
-    Recover Your:
- -Hacked Social Media Accounts (Facebook, Instagram, Twitter, etc.)
- -Lost or Stolen Crypto/Funds
- - Deleted or Corrupted Data
- - Gaming Data and Accounts
- - Scam Funds (Phishing, Investment, Romance Scams, etc.)">
- <meta name="keywords" content="how to recover, hacked, suspended, scams,Facebook, Instagram, AdrianTech">
-    <title>AdrianTech</title>
+    <meta name="description" content="Ethical Hacking Services. Recover Your: Hacked Social Media Accounts, Lost Crypto/Funds, Deleted Data, Gaming Accounts, Scam Funds.">
+    <meta name="keywords" content="recover hacked accounts, crypto recovery, scam funds, cybersecurity, AdrianTech">
+    <title>AdrianTech | Cybersecurity & Recovery Expert</title>
     <!-- Font Awesome CDN for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -23,10 +17,19 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #0A0A0A; /* Dark background */
+            color: #E0E0E0; /* Light text */
+        }
+
+        a {
+            color: #00FF88; /* Tech green for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         .container {
@@ -40,11 +43,11 @@
             background-image: url('./HEADER.jpg'); /* Replace with your image URL */
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;
             color: white;
             text-align: center;
-            padding: 100px 0; /* Adjust padding for spacing */
+            padding: 150px 0;
             position: relative;
+            overflow: hidden;
         }
 
         .header::after {
@@ -54,28 +57,62 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(3, 3, 51, 0.5); /* Semi-transparent overlay */
+            background: rgba(0, 0, 0, 0.7); /* Dark overlay */
             z-index: 1;
         }
 
         .header-content {
             position: relative;
-            z-index: 2; /* Ensure text appears above the overlay */
+            z-index: 2;
         }
 
         .header h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 10px;
+            color: #00FF88; /* Tech green */
+            animation: fadeIn 2s ease-in-out;
         }
 
         .header p {
             font-size: 1.2rem;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .header .social-links {
+            margin-top: 20px;
+        }
+
+        .header .social-links a {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            color: #00FF88;
+            transition: color 0.3s ease;
+        }
+
+        .header .social-links a:hover {
+            color: #00CC66;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 0;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #00FF88;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        section p, section li {
+            font-size: 1.1rem;
+            color: #E0E0E0;
         }
 
         /* About Section */
         .about {
-            background-color: #fff;
-            padding: 40px 0;
+            background-color: #121212; /* Slightly lighter dark background */
             text-align: center;
         }
 
@@ -84,18 +121,13 @@
             height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid #007bff;
+            border: 5px solid #00FF88;
             margin-bottom: 20px;
-        }
-
-        .about p {
-            font-size: 1.1rem;
         }
 
         /* Services Section */
         .services {
-            background-color: #f4f4f4;
-            padding: 40px 0;
+            background-color: #0A0A0A;
         }
 
         .services ul {
@@ -105,13 +137,19 @@
 
         .services li {
             margin-bottom: 15px;
-            font-size: 1.1rem;
+            padding: 10px;
+            background-color: #121212;
+            border-left: 4px solid #00FF88;
+            transition: transform 0.3s ease;
+        }
+
+        .services li:hover {
+            transform: translateX(10px);
         }
 
         /* Expertise Section */
         .Expertise {
-            background-color: #fff;
-            padding: 40px 0;
+            background-color: #121212;
         }
 
         .Expertise ul {
@@ -121,45 +159,37 @@
 
         .Expertise li {
             margin-bottom: 15px;
-            font-size: 1.1rem;
+            padding: 10px;
+            background-color: #0A0A0A;
+            border-left: 4px solid #00FF88;
         }
 
-        /* Success Stories Section */
-        .success-stories {
-            width: 100%;
-            height: 350px;
-            overflow: auto;
-            background-color: #f4f4f4;
-            padding: 40px 0;
+        /* Success Stories & Testimonials Sections */
+        .success-stories, .testimonials {
+            background-color: #0A0A0A;
         }
 
-        .story {
+        .story, blockquote {
+            background-color: #121212;
+            padding: 20px;
             margin-bottom: 20px;
+            border-left: 4px solid #00FF88;
         }
 
-        .story h3 {
-            margin-bottom: 10px;
-        }
-
-        /* Testimonials Section */
-        .testimonials {
-            width: 100%;
-            height: 350px;
-            overflow: auto;
-            background-color: #fff;
-            padding: 40px 0;
-        }
-
-        .testimonials blockquote {
+        blockquote {
             font-style: italic;
-            font-size: 1.1rem;
-            margin-bottom: 20px;
+            color: #E0E0E0;
+        }
+
+        blockquote::before {
+            content: "“";
+            font-size: 2rem;
+            color: #00FF88;
         }
 
         /* Contact Section */
         .contact {
-            background-color: #f4f4f4;
-            padding: 40px 0;
+            background-color: #121212;
             text-align: center;
         }
 
@@ -180,42 +210,32 @@
         .contact i {
             font-size: 2rem;
             margin-right: 10px;
-            color: #007bff;
-        }
-
-        .contact a {
-            color: #333;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-        }
-
-        .contact a:hover {
-            text-decoration: underline;
-        }
-
-        /* whyme Section */
-        .whyme {
-            background-color: #fff;
-            padding: 40px 0;
-        }
-
-        .whyme ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .whyme li {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
+            color: #00FF88;
         }
 
         /* Footer Section */
         .footer {
-            background-color: #333;
-            color: white;
+            background-color: #000;
+            color: #E0E0E0;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
+        }
+
+        .footer .social-links a {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            color: #00FF88;
+            transition: color 0.3s ease;
+        }
+
+        .footer .social-links a:hover {
+            color: #00CC66;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
@@ -223,24 +243,24 @@
     <!-- Header Section -->
     <header class="header">
         <div class="container header-content">
-            <h1>Digital Asset & Cyber Recovery Expert</h1>
+            <h1>Cyber support & services</h1>
             <p>Recovering Hacked Accounts & Lost Crypto Funds</p>
-            <a href="https://twitter.com/messages/compose?recipient_id=1168331155877367811"><i class="fab fa-twitter"></i></a>
-            <a href="https://t.me/AdrianT_ech"><i class="fab fa-telegram"></i></a>
-            <a href="https://Wa.me/message/X3YFBFYP5QHPL1"><i class="fab fa-whatsapp"></i></a>
+            <div class="social-links">
+                <a href="https://twitter.com/messages/compose?recipient_id=1168331155877367811"><i class="fab fa-twitter"></i></a>
+                <a href="https://t.me/AdrianT_ech"><i class="fab fa-telegram"></i></a>
+                <a href="https://Wa.me/message/X3YFBFYP5QHPL1"><i class="fab fa-whatsapp"></i></a>
+            </div>
         </div>
     </header>
 
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
-            <img src="ABAUT.jpg" alt="About Me Image"> <!-- Replace with your about me image URL -->
+            <img src="ABAUT.jpg" alt="About Me Image">
             <h3>Adrian James</h3>
             <h2>About Me</h2>
-            <p>I am a dedicated Cybersecurity Expert with extensive experience in helping individuals and businesses recover compromised digital assets. My primary focus is on securing and restoring access to hacked social media accounts, gaming profiles, and lost cryptocurrency funds due to scams, incorrect transactions, or platform freezes.</p>
+            <p>I am a dedicated Cybersecurity Expert with extensive experience in helping individuals and businesses recover compromised profiles & Lost assets. my primary focus is on securing and restoring social media accounts, gaming profiles, and lost digital assets due to scams, incorrect transaction, or platform freezes. </p>
         </div>
-    </section>
-
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
@@ -313,64 +333,64 @@
         <div class="container">
             <h2>Testimonials</h2>
             <blockquote>
-                "I thought my crypto was gone forever until I reached out to Adrian. his expertise and persistence saved me thousands of dollars!"<br>
+                I thought my crypto was gone forever until I reached out to Adrian. his expertise and persistence saved me thousands of dollars!"<br>
                 — John D., Investor
             </blockquote>
             <blockquote>
-                "After months of trying to get my hacked Twitter account back, Adrian did it in just a few hours. Thank you so much!"<br>
+                After months of trying to get my hacked Twitter account back, Adrian did it in just a few hours. Thank you so much!"<br>
                 — Sarah M., Content Creator
             </blockquote>
             <blockquote>
-                "A scammer tricked me into sending them Ethereum, and I thought there was no way to get it back. But Adrin proved me wrong. Through his network and investigative skills, he managed to trace the transaction and recover over 90% ." <br>
+                A scammer tricked me into sending them Ethereum, and I thought there was no way to get it back. But Adrin proved me wrong. Through his network and investigative skills, he managed to trace the transaction and recover over 90% ." <br>
                 — David S., Victim of Scam
             </blockquote>
             <blockquote>
-                "I lost access to my Gmail account after falling victim to a phishing attack. Adrian quickly identified the issue and helped me regain control. he also educated me on how to avoid similar attacks in the future. I’m extremely grateful!"<br>
+                I lost access to my Gmail account after falling victim to a phishing attack. Adrian quickly identified the issue and helped me regain control. he also educated me on how to avoid similar attacks in the future. I’m extremely grateful!"<br>
                 — Emily R., Business Owner 
             </blockquote>
             <blockquote>
-                "When my YouTube channel was hacked, I thought I’d lose everything I had built over the years. Adrian worked tirelessly to restore my channel and even helped recover some of the deleted videos. his expertise saved my career!"<br>
+                When my YouTube channel was hacked, I thought I’d lose everything I had built over the years. Adrian worked tirelessly to restore my channel and even helped recover some of the deleted videos. his expertise saved my career!"<br>
                 — Ryan T., Content Creator 
             </blockquote>
             <blockquote>
-                "I accidentally sent Bitcoin to the wrong wallet address, and I was devastated. Adrian not only explained the situation clearly but also worked tirelessly to recover my funds. Thanks to his expertise, I got most of my money back!"<br>
+                I accidentally sent Bitcoin to the wrong wallet address, and I was devastated. Adrian not only explained the situation clearly but also worked tirelessly to recover my funds. Thanks to his expertise, I got most of my money back!"<br>
                 — Michael R., Cryptocurrency Trader
             </blockquote>
             <blockquote>
-                "My gaming account on Steam had been hacked, and all my valuable items were stolen. After reaching out to Adrian, he quickly identified the breach and helped me regain control of my account. he even assisted in recovering some of the stolen items through Steam support. I can’t thank them enough!"<br>
+                My gaming account on Steam had been hacked, and all my valuable items were stolen. After reaching out to Adrian, he quickly identified the breach and helped me regain control of my account. he even assisted in recovering some of the stolen items through Steam support. I can’t thank them enough!"<br>
                 — Alex P., Gamer 
             </blockquote>
             <blockquote>
-                "When my crypto exchange account was frozen without warning, I felt helpless. Adrian stepped in and navigated the complex dispute resolution process with professionalism. Within two weeks, my account was unfrozen, and my funds were restored. I highly recommend his services!"<br>
+                When my crypto exchange account was frozen without warning, I felt helpless. Adrian stepped in and navigated the complex dispute resolution process with professionalism. Within two weeks, my account was unfrozen, and my funds were restored. I highly recommend his services!"<br>
                 — Emma L., Investor 
             </blockquote>
             <blockquote>
-                "A scammer tricked me into sending them Ethereum, and I thought there was no way to get it back. But Adrian proved me wrong. Through his network and investigative skills, he managed to trace the transaction and negotiate a partial refund. his dedication is unmatched!"<br>
+                A scammer tricked me into sending them Ethereum, and I thought there was no way to get it back. But Adrian proved me wrong. Through his network and investigative skills, he managed to trace the transaction and negotiate a partial refund. his dedication is unmatched!"<br>
                 — David S., Victim of Scam 
             </blockquote>
             <blockquote>
-                "After being locked out of my Instagram business account due to a hack, my entire online presence was at risk. Adrian acted fast, working directly with Instagram support to verify my identity and restore access. My business is back on track thanks to his quick response!"<br>
+                After being locked out of my Instagram business account due to a hack, my entire online presence was at risk. Adrian acted fast, working directly with Instagram support to verify my identity and restore access. My business is back on track thanks to his quick response!"<br>
                 — Sarah K., Social Media Marketer 
             </blockquote>
             <blockquote>
-                "I lost access to my Discord server after someone gained unauthorized access. Adrian guided me through the recovery process and even implemented stronger security measures to prevent future attacks. his attention to detail is impressive!"<br>
+                I lost access to my Discord server after someone gained unauthorized access. Adrian guided me through the recovery process and even implemented stronger security measures to prevent future attacks. his attention to detail is impressive!"<br>
                 — James T., Community Manager 
             </blockquote>
             <blockquote>
-                "When my crypto wallet was compromised, I panicked. Adrian provided calm and expert advice, helping me secure what remained and recover part of the stolen funds. his knowledge of blockchain technology is truly remarkable."<br>
+                When my crypto wallet was compromised, I panicked. Adrian provided calm and expert advice, helping me secure what remained and recover part of the stolen funds. his knowledge of blockchain technology is truly remarkable."<br>
                 — Lisa W., Crypto Enthusiast 
             </blockquote>
             <blockquote>
-                "As a small business owner, losing access to my company's Twitter account due to a phishing attack was catastrophic. Adrian James came to the rescue, identifying the breach and assisting in regaining control. he also educated me on how to avoid such incidents in the future."<br>
+                As a small business owner, losing access to my company's Twitter account due to a phishing attack was catastrophic. Adrian James came to the rescue, identifying the breach and assisting in regaining control. he also educated me on how to avoid such incidents in the future."<br>
                 — Robert H., Business Owner 
             </blockquote>
             <blockquote>
-                "A friend referred me to Adrian after I fell victim to a fake investment scheme.
+                A friend referred me to Adrian after I fell victim to a fake investment scheme.
                 but he also traced the scammers' digital footprint. While full recovery isn't always possible, his efforts gave me peace of mind and closure."<br>
                 — Clara G., Victim of Investment Scam 
             </blockquote>
             <blockquote>
-                "My child’s gaming account was hacked, and several in-game purchases were made without permission. Adrian James handled everything professionally, contacting the game developer to reverse the charges and secure the account. I’m grateful for his assistance!"<br>
+                My child’s gaming account was hacked, and several in-game purchases were made without permission. Adrian James handled everything professionally, contacting the game developer to reverse the charges and secure the account. I’m grateful for his assistance!"<br>
                 — Jennifer M., Parent 
             </blockquote>
         </div>
