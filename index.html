@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ethical Hacking Services. Recover Your: Hacked Social Media Accounts, Lost Crypto/Funds, Deleted Data, Gaming Accounts, Scam Funds.">
+    <meta name="keywords" content="recover hacked accounts, crypto recovery, scam funds, cybersecurity, AdrianTech">
+    <title>AdrianTech | Cybersecurity & Recovery Expert</title>
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #0A0A0A; /* Dark background */
+            color: #E0E0E0; /* Light text */
+        }
+
+        a {
+            color: #00FF88; /* Tech green for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        .header {
+            background-image: url('./HEADER1.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 150px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+            z-index: 1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #00FF88; /* Tech green */
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .header .social-links {
+            margin-top: 20px;
+        }
+
+        .header .social-links a {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            color: #00FF88;
+            transition: color 0.3s ease;
+        }
+
+        .header .social-links a:hover {
+            color: #00CC66;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 0;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #00FF88;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        section p, section li {
+            font-size: 1.1rem;
+            color: #E0E0E0;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #121212; /* Slightly lighter dark background */
+            text-align: center;
+        }
+
+        .about img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #00FF88;
+            margin-bottom: 20px;
+        }
+
+        /* Services Section */
+        .services {
+            background-color: #0A0A0A;
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services li {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #121212;
+            border-left: 4px solid #00FF88;
+            transition: transform 0.3s ease;
+        }
+
+        .services li:hover {
+            transform: translateX(10px);
+        }
+
+        .services img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10%;
+            object-fit: cover;
+            border: 5px solid #0a0a0a;
+            margin-bottom: 20px;
+
+        }    
+
+        /* Expertise Section */
+        .Expertise {
+            background-color: #121212;
+        }
+
+        .Expertise ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .Expertise li {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #0A0A0A;
+            border-left: 4px solid #00FF88;
+        }
+
+        .Expertise img {
+            width: 300px;
+            height: 200px;
+            border-radius: 20%;
+            object-fit: cover;
+            border: 5px solid #0a0a0a;
+            margin-bottom: 20px;
+        }
+
+        /* Success Stories & Testimonials Sections */
+        .success-stories, .testimonials {
+            background-color: #0A0A0A;
+        }
+
+        .story, blockquote {
+            background-color: #121212;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #00FF88;
+        }
+
+        blockquote {
+            font-style: italic;
+            color: #E0E0E0;
+        }
+
+        blockquote::before {
+            content: "“";
+            font-size: 2rem;
+            color: #00FF88;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #121212;
+            text-align: center;
+        }
+
+        .contact ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact li {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .contact i {
+            font-size: 2rem;
+            margin-right: 10px;
+            color: #00FF88;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #000;
+            color: #E0E0E0;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer .social-links a {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            color: #00FF88;
+            transition: color 0.3s ease;
+        }
+
+        .footer .social-links a:hover {
+            color: #00CC66;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container header-content">
+            <h1>Cyber support & services</h1>
+            <p>Recovering Hacked Accounts & Lost Crypto Funds</p>
+            <div class="social-links">
+                <a href="https://twitter.com/messages/compose?recipient_id=1168331155877367811"><i class="fab fa-twitter"></i></a>
+                <a href="https://t.me/AdrianT_ech"><i class="fab fa-telegram"></i></a>
+                <a href="https://Wa.me/message/X3YFBFYP5QHPL1"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <img src="ABAUT.jpg" alt="About Me Image">
+            <h3>Adrian James</h3>
+            <h2>About Me</h2>
+            <p>I am a dedicated Cybersecurity Expert with extensive experience in helping individuals and businesses recover compromised profiles & Lost assets. my primary focus is on securing and restoring social media accounts, gaming profiles, and lost digital assets due to scams, incorrect transaction, or platform freezes. </p>
+        </div>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Services Offered</h2>
+            <ul>
+                <li><center><img src="1.jpg"></center><strong>Social Media Account Recovery</strong>:<br> Regain control of hacked Facebook, Instagram, Twitter, Discord or other social media accounts.
+                    Investigate unauthorized access and secure your account against future breaches.
+                    Assist in resetting passwords, email addresses, and two-factor authentication (2FA) settings.
+                    <div class="social-links">
+                        <a href="https://twitter.com/messages/compose?recipient_id=1168331155877367811"><i class="fab fa-twitter"></i></a>
+                        <a href="https://t.me/AdrianT_ech"><i class="fab fa-telegram"></i></a>
+                        <a href="https://Wa.me/message/X3YFBFYP5QHPL1"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+
+                </li>
+
+                <li><center><img src="2.jpg"></center><strong>Gaming account Recovery</strong>:<br>Steam, Xbox Live, or other gaming accounts.
+                        Investigate unauthorized access and secure your account against future breaches.
+                        Assist in resetting passwords, email addresses, and two-factor authentication (2FA) settings.
+                        <div class="social-links">
+                            <a href="https://twitter.com/messages/compose?recipient_id=1168331155877367811"><i class="fab fa-twitter"></i></a>
+                            <a href="https://t.me/AdrianT_ech"><i class="fab fa-telegram"></i></a>
+                            <a href="https://Wa.me/message/X3YFBFYP5QHPL1"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    
+                    </li>
+
+                <li><center><img src="3.jpg"></center><strong>Cryptocurrency Fund Recovery</strong>:<br> Recover lost or stolen cryptocurrencies sent to wrong addresses or deposited into fraudulent platforms.
+                    Provide guidance on reversing accidental transfers where possible.
+                    Collaborate with exchanges and wallet providers to unfreeze locked funds.
+                    <div class="social-links">
+                        <a href="https://twitter.com/messages/compose?recipient_id=1168331155877367811"><i class="fab fa-twitter"></i></a>
+                        <a href="https://t.me/AdrianT_ech"><i class="fab fa-telegram"></i></a>
+                        <a href="https://Wa.me/message/X3YFBFYP5QHPL1"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                
+                </li>
+
+                <li><center><img src="4.jpg"></center><strong>Scam Website Mitigation</strong>:<br> Analyze phishing attacks, fake investment schemes, and Ponzi scams.
+                    Work with law enforcement agencies and regulatory bodies to track down scammers.
+                    Educate clients on how to avoid common cyber scams and protect his personal information.
+                    <div class="social-links">
+                        <a href="https://twitter.com/messages/compose?recipient_id=1168331155877367811"><i class="fab fa-twitter"></i></a>
+                        <a href="https://t.me/AdrianT_ech"><i class="fab fa-telegram"></i></a>
+                        <a href="https://Wa.me/message/X3YFBFYP5QHPL1"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                
+                </li>
+
+                <li><center><img src="5.jpg"></center><strong>Platform Dispute Resolution</strong>:<br> Resolve disputes with centralized and decentralized platforms regarding frozen accounts or inaccessible funds.
+                    Draft formal complaints and escalate cases to higher authorities if necessary.
+                    Negotiate settlements or refunds when applicable..
+                    <div class="social-links">
+                        <a href="https://twitter.com/messages/compose?recipient_id=1168331155877367811"><i class="fab fa-twitter"></i></a>
+                        <a href="https://t.me/AdrianT_ech"><i class="fab fa-telegram"></i></a>
+                        <a href="https://Wa.me/message/X3YFBFYP5QHPL1"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="Expertise" id="Expertise">
+        <div class="container">
+            <h2>Expertise & Skills</h2>
+            <ul>
+                <center><img src="asdfg.jpg"></center>
+                <li><strong>Digital Forensics</strong>: Deep understanding of data recovery techniques and tools.</li>
+
+                <li><strong>Blockchain Technology</strong>: Proficient in Bitcoin, Ethereum, Binance Smart Chain, and other major blockchains.</li>
+
+                <li><strong>Cyber Incident Response</strong>: Rapid response to incidents involving hacking, ransomware, and data breaches.</li>
+
+                <li><strong>Ethical Hacking</strong>: Certified knowledge in penetration testing and vulnerability assessment.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="success-stories" id="success-stories">
+        <div class="container">
+            <h2>Success Stories</h2>
+            <div class="story">
+                <h3>Case Study 1: Social Media Account Recovery</h3>
+                <p>Regained access to a hacked Instagram account within 3 hours.</p>
+            </div>
+            <div class="story">
+                <h3>Case Study 2: Cryptocurrency Transfer Error</h3>
+                <p>Recovered 90% of mistakenly sent ETH by collaborating with the exchange.</p>
+            </div>
+            <div class="story">
+                <h3>Case Study 3: Frozen Crypto Exchange Account</h3>
+                <p>Reinstated a frozen account and restored full access to funds.</p>
+            </div>
+            <div class="story">
+                <h3>Case Study 4: Hacked Gmail Account</h3>
+                <p>Successfully restored the account within 3 hours.</p>
+            </div>
+            <div class="story">
+                <h3>Case Study #5: Haked Youtube Channel.</h3>
+                <p>Full restoration of the Channel, including subcriber count and monetization status.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <a href="Testimonials.html"><h2>Testimonials<br> > </h2></a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Ready to take action? Let’s work together to secure your digital assets and resolve any issues you may be facing.</p>
+            <ul>
+                <li><a href="https://twitter.com/messages/compose?recipient_id=1168331155877367811"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://t.me/AdrianT_ech"><i class="fab fa-telegram"></i> Telegram</a></li>
+                <li><a href="https://Wa.me/message/X3YFBFYP5QHPL1"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="whyme" id="whyme">
+        <div class="container">
+            <h2>Why Choose Me?</h2>
+            <ul>
+                <li><strong>Experience</strong>: Years of hands-on experience dealing with complex cybersecurity challenges.</li>
+
+                <li><strong>Confidentiality</strong>: Your privacy and sensitive information are always protected.</li>
+
+                <li><strong>Transparency</strong>: Clear communication throughout the process, ensuring you understand every step taken.</li>
+
+                <li><strong>Results-Driven</strong>: Focused on delivering tangible outcomes and minimizing downtime for your accounts or investments.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Digital Asset & Cyber Recovery Expert. All rights reserved.</p>
+            <a href="https://twitter.com/messages/compose?recipient_id=1168331155877367811"><i class="fab fa-twitter"></i></a>
+            <a href="https://t.me/AdrianT_ech"><i class="fab fa-telegram"></i></a>
+            <a href="https://Wa.me/message/X3YFBFYP5QHPL1"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
